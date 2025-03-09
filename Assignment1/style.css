@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.pfp-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    border: 2px solid rgb(207, 201, 201);
+    background-color: #f2f8f1;
+    padding: 10px 25px;
+}
+
+.name {
+    text-align: center;
+    font-size: 35px;
+}
+
+.pfp-part2 {
+    padding: 10px 50px;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    height: 300px; 
+    
+}
+
+.profile {
+    height: 270px;
+    width: 270px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile img {
+    height: 70px;
+    width: 140px;
+    border-radius: 20px; 
+    object-fit: cover;
+}
+
+
+
+.profile img {
+    height: 100%;
+    width: 100%;
+}
+
+.profile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.projects-container {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(207, 201, 201);
+    background-color: #f2f8f1;
+    margin: 10px 0px;
+    gap: 10px;
+    padding: 10px 25px;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 35px;
+}
+
+.projects {
+    width: calc(50% - 20px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px 25px;
+    border-radius: 15px;
+    gap: 5px;
+
+}
+
+.project-link {
+    text-decoration: none;
+
+}
+
+.work-exp {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;
+    border: 2px solid rgb(207, 201, 201);
+    background-color: #f2f8f1;
+    padding: 10px 25px;
+}
+
+
+
+@media screen and (max-width: 1264px) {
+    .links {
+        font-size: 30px;
+    }
+
+    .profile {
+        height: 200px;
+        width: 200px;
+    }
+
+    .profile img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px; 
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .name,
+    .project-title {
+        font-size: 28px;
+    }
+
+    .work-exp {
+        font-size: 15px;
+    }
+
+    .profile {
+        height: 180px;
+        width: 180px;
+    }
+
+    .profile img {
+        border-radius: 15px; 
+    }
+
+    .profile-links {
+        height: 100%;
+        width: 80%;
+    }
+
+    .links {
+        font-size: 22px;
+    }
+
+    .pfp-part2 {
+        width: 70%;
+        gap: 20px;
+    }
+
+    .projects {
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width: 794px) {
+    .name {
+        font-size: 20px;
+    }
+
+    .profile {
+        height: 150px;
+        width: 150px;
+    }
+
+    .profile img {
+        border-radius: 0px; 
+        object-fit: cover;
+    }
+
+    .profile-links {
+        height: 100%;
+        width: 80%;
+    }
+
+    .links {
+        font-size: 15px;
+    }
+
+    .pfp-part2 {
+        flex-direction: column;
+        width: 80%;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .profile-links {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects {
+        width: calc(100% - 20px);
+    }
+
+    .projects-container {
+        padding: 10px 0px;
+    }
+}
